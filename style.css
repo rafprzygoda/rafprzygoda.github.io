@@ -6,7 +6,7 @@
 
 body {
     margin: 0px;
-    background: url("wooden.jpg") center fixed;
+    background: url("wooden2.jpg") center fixed;
     background-repeat: no-repeat;
     background-size: cover;   
 }
@@ -33,10 +33,14 @@ header p {
 /*NAVIGATION*/
 
 /*navigation center code*/
+
+.navbar {
+    box-shadow: 2px 2px 5px #000;
+}
+
 .navbar-nav {
     margin: 0 auto;
-    text-align: center;
-    
+    text-align: center;  
 }
 
 .navbar-nav > li {
@@ -74,6 +78,7 @@ header p {
     width: 850px;
     height: 750px;
     background-color: #fff;
+    box-shadow: 5px 5px 5px #000;
 }
 
 .container_carousel h4,
@@ -87,7 +92,7 @@ header p {
     font-size: 35px;
 }
 
-/*MEDIA*/
+/*MEDIA (ABOUT)*/
 
 .media img {
     width: 150px;
@@ -100,6 +105,7 @@ header p {
     width: 850px;
     margin: 10px auto;
     padding: 10px;
+    box-shadow: 5px 5px 5px #000;
 }
 
 .media h5 {
@@ -111,14 +117,30 @@ header p {
     margin: 10px auto;
 }
 
+/*PROJECTS*/
+
+.project p {
+    margin: 10px 50px;
+}
+
+.images img {
+    box-shadow: 1px 1px 5px #000;
+}
+
+.images img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
 /*CONTACT*/
 
 .contact {
     width: 850px;
-    background-color: aliceblue;
+    background-color: rgba(150, 150, 150, 0.95);
     margin: 10px auto;
     padding: 10px;
     text-align: center;
+    box-shadow: 5px 5px 5px #000;
 }
 
 .contact h5 {
@@ -130,15 +152,23 @@ header p {
 }
 
 .contact i {
-    font-size: 15px;
-    color: #fff;
-    background-color: blue;
-    border: 1px solid black;
-    border-radius: 10%;
-    width: 30px;
-    height: 30px;
+    font-size: 35px;
+    color: dodgerblue;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
     margin: 10px auto;
+    text-align: center;
+}
+
+.contact i:hover {
+    color: #fff;
+    background-color: dodgerblue;
+    transition-duration: 0.5s; 
+    transform: scale(1.2);
 }
 
 .contact p {
@@ -150,15 +180,16 @@ header p {
 
 footer {
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #444;
 }
 
 .row_footer i {
     font-size: 26px;
     margin: 10px auto;
-    color: red;
+    color: #34bac1;
 }
 
 .row_footer p {
     margin: 10px auto;
+    color: aliceblue;
 }
