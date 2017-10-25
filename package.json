@@ -1,0 +1,27 @@
+{
+  "name": "rafmeb",
+  "version": "1.0.0",
+  "description": "Hello,\r website isn't finished yet.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafprzygoda/rafprzygoda.github.io.git"
+  },
+  "keywords": [
+    "furniture"
+  ],
+  "author": "rprzygoda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafprzygoda/rafprzygoda.github.io/issues"
+  },
+  "homepage": "https://github.com/rafprzygoda/rafprzygoda.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.5.0",
+    "gulp-imagemin": "^3.4.0"
+  }
+}

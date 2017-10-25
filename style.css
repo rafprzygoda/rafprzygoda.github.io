@@ -6,9 +6,10 @@
 
 body {
     margin: 0px;
-    background: url("wooden2.min.jpg") center fixed;
+    background: url("./images/wooden3.jpg") center fixed;
     background-repeat: no-repeat;
-    background-size: cover;   
+    background-size: cover; 
+    object-fit: cover;
 }
 /* HEADER */
 
