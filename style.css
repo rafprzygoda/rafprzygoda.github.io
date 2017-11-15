@@ -60,7 +60,19 @@ header p {
 
 .navbar-nav >li:hover {
     background-color: bisque;
-    
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    margin: 0 auto;
+    width: 200px;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: burlywood;
 }
 
 /*CAROUSEL*/
