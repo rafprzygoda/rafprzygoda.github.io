@@ -5,15 +5,24 @@
     box-sizing: border-box;
 }
 
-body {
+body:not(header) {
     margin: 0px;
+    background: url("./images/black_linen_v2.png") center fixed;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding-top: 70px;
+}
+/* HEADER */
+
+header {
+    margin-bottom: 10px;
+    text-shadow: 5px 5px 5px #000;
     background: url("./images/wooden3.jpg") center fixed;
     background-repeat: no-repeat;
     background-size: cover; 
     object-fit: cover;
     background-attachment: fixed;
 }
-/* HEADER */
 
 header h1 {
     font-family: 'Roboto Condensed', sans-serif;
@@ -33,7 +42,7 @@ header #brand-name {
 header #address {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 header h1,
@@ -47,26 +56,30 @@ header p {
 
 /*navigation center code*/
 
-.navbar {
-    
+.navbar-nav p {
+    margin-right: 20px;
 }
 
 .navbar-nav {
-    margin: 0 auto;
+    margin: 0px auto;
     width: 100%;
     text-align: center; 
-    
+    color: aliceblue;
 }
 
 .navbar-nav > li {
     margin: 0px 20px;
+    width: 200px;
     position: relative;
     left: 5%;
     font-size: 20px;
+    color: aliceblue;
 }
 
 .navbar-nav >li:hover {
-    background-color: bisque;
+    background-color: dimgrey;
+    border-radius: 5px;
+    color: aliceblue;
 }
 
 /*CAROUSEL*/
@@ -145,9 +158,11 @@ header p {
     width: 850px;
     background-color: aliceblue;
     margin: 10px auto;
+    margin-bottom: 50px;
     padding: 10px;
     text-align: center;
     box-shadow: 5px 5px 5px #000;
+    overflow: hidden;
 }
 
 .contact h5 {
@@ -184,6 +199,7 @@ header p {
 
 
 /*FOOTER*/
+
 
 
 @media (max-width: 576px) {
