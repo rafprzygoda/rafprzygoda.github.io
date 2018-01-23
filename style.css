@@ -68,19 +68,37 @@ header p {
 }
 
 .navbar-nav > li {
-    margin: 0px 20px;
+    margin: 0px auto;
     width: 200px;
-    position: relative;
-    left: 5%;
+    /*position: relative;
+    left: 5%;*/
     font-size: 20px;
     color: aliceblue;
 }
 
-.navbar-nav >li:hover {
-    background-color: dimgrey;
+.navbar-nav > li:hover {
+    background-color: #999;
     border-radius: 5px;
     color: aliceblue;
 }
+
+/*.navbar-nav .dropdown-menu li {
+    text-align: center;
+    width: 200px;
+    padding: 0 10px 0 10px;
+}
+
+.navbar-nav .dropdown-menu li:hover{
+    background-color: dimgrey;
+}
+
+.navbar-nav .dropdown-menu li a {
+    padding: 10px 0;
+    width: 150px;
+    margin: 5px auto;
+}
+
+*/
 
 /*CAROUSEL*/
 
@@ -94,7 +112,7 @@ header p {
     width: 850px;
     height: 100%;
     background-color: #fff;
-    box-shadow: 5px 5px 5px #000;
+    box-shadow: 5px 5px 5px #444;
 }
 
 .photos {
@@ -113,7 +131,7 @@ header p {
     width: 850px;
     margin: 10px auto;
     padding: 10px;
-    box-shadow: 5px 5px 5px #000;
+    box-shadow: 5px 5px 5px #444;
     
 }
 
@@ -121,7 +139,7 @@ header p {
     text-align: center;
     padding: 10px;
     border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #444;
     width: 30%;
     margin: 10px auto;
 }
@@ -144,13 +162,16 @@ header p {
 }
 
 .images img {
-    box-shadow: 1px 1px 5px #000;
+    box-shadow: 1px 1px 5px #444;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #000;
+    width: 350px;
+    height: 280px;
 }
 
 .images img:hover {
     cursor: pointer;
-    transform: scale(1.7);
-    transition-duration: 0.5s;
 }
 /*CONTACT*/
 
@@ -161,7 +182,7 @@ header p {
     margin-bottom: 50px;
     padding: 10px;
     text-align: center;
-    box-shadow: 5px 5px 5px #000;
+    box-shadow: 5px 5px 5px #444;
     overflow: hidden;
 }
 
@@ -184,6 +205,7 @@ header p {
     cursor: pointer;
     margin: 10px auto;
     text-align: center;
+    line-height: inherit;
 }
 
 .contact i:hover {
@@ -218,15 +240,39 @@ header p {
         font-size: 25px;
     }
     
-    .navbar-nav li {
+    /*.navbar-nav li {
         margin: 0 auto;
         float: left;
         display: block;
         width: 100%;
         height: 100%;
         text-align: center;
-    }
+    } */
     
+
+    .navbar-nav p {
+        text-align: center;
+        font-size: 10px;  
+    }
+
+    .navbar-nav {
+        margin: 0 auto;
+        width: 100%; 
+        color: aliceblue;
+    }
+
+    .navbar-nav > li {
+        margin: 0 auto;
+        width: 100%;
+        font-size: 20px;
+        color: aliceblue;
+    }
+
+    .navbar-nav > li:hover {
+        background-color: #999;
+        color: aliceblue;
+    }
+
     /* carousel */
     
     .container_carousel {
@@ -282,14 +328,33 @@ header p {
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
-    .navbar-nav li {
-        margin: 0 auto;
-        float: left;
-        display: block;
-        width: 100%;
-        height: auto;
-        padding-top: 5px;
+    
+    .container #brand-name {
+        font-size: 85px;
+    }
+    
+    .navbar-nav p {
         text-align: center;
+        font-size: 10px;  
+    }
+
+    .navbar-nav {
+        margin: 0 auto;
+        width: 100%; 
+        color: aliceblue;
+        border: 1px solid #000;
+    }
+
+    .navbar-nav > li {
+        margin: 0 auto;
+        width: 100%;
+        font-size: 20px;
+        color: aliceblue;
+    }
+
+    .navbar-nav > li:hover {
+        background-color: #999;
+        color: aliceblue;
     }
     
     /* carousel */
@@ -343,14 +408,30 @@ header p {
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
-    .navbar-nav li {
-        margin: 0 auto;
-        float: left;
-        display: block;
-        width: 100%;
-        height: auto;
-        padding-top: 5px;
+    
+    .navbar-nav p {
         text-align: center;
+        font-size: 10px;  
+    }
+
+    .navbar-nav {
+        margin: 0 auto;
+        padding: 20px 0;
+        width: 100%; 
+        color: aliceblue;
+        border: 1px solid #000;
+    }
+
+    .navbar-nav > li {
+        margin: 0 auto;
+        width: 100%;
+        font-size: 20px;
+        color: aliceblue;
+    }
+
+    .navbar-nav > li:hover {
+        background-color: #999;
+        color: aliceblue;
     }
     
     /* carousel */
