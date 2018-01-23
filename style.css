@@ -342,7 +342,6 @@ header p {
         margin: 0 auto;
         width: 100%; 
         color: aliceblue;
-        border: 1px solid #000;
     }
 
     .navbar-nav > li {
@@ -419,7 +418,6 @@ header p {
         padding: 20px 0;
         width: 100%; 
         color: aliceblue;
-        border: 1px solid #000;
     }
 
     .navbar-nav > li {
