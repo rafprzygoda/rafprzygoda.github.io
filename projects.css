@@ -3,18 +3,29 @@
 
 * {
     box-sizing: border-box;
-    
 }
 
-body {
+body:not(header) {
     margin: 0px;
-    background: url("./images/wooden3.jpg") center fixed;
+    background: url("./images/black_linen_v2.png") center fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
+    padding-top: 70px;
 }
 
 section {
     height: 100%;
+}
+
+/* Header */
+
+header {
+    background: url("./images/wooden3.jpg") center fixed;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    object-fit: cover;
+    background-attachment: fixed;
+    margin: 20px 0;
 }
 
 header .container {
@@ -27,7 +38,7 @@ header .container h1 {
     padding: 20px 0px;
     font-family: 'Bubblegum Sans', cursive; 
     color: aliceblue;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 2px 2px 2px #444;
     font-size: 50px;
     letter-spacing: 7px;
 }
@@ -38,40 +49,114 @@ header .container p {
     font-family: 'Bubblegum Sans', cursive; 
     font-size: 40px;
     color: aliceblue;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 2px 2px 2px #444;
     margin-top: auto;
     letter-spacing: 7px;
 }
 
+.container i {
+    font-size: 55px;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px #444;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+/* Article */
+
 article {
-    height: 100pz;
-    margin: 30px 30px;
+    height: auto;
+    padding: 30px 0;
 }
 
 article p {
     text-align: center;
-    padding: 40px;
+    width: 50%;
+    margin: 0 auto;
     color: aliceblue;
     text-shadow: 1px 1px 2px black;
 }
 
-#games ul li {
-	list-style: none;
+/* Tabs */
+
+.tabs h2 {
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 40px;
+    padding: 30px 0px;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px #444;
 }
 
+.nav-tabs {
+    border-bottom: 0px;
+}
+
+.nav-tabs > li > a {
+    background: url("./images/wooden3.jpg") center fixed;
+    object-fit: cover;
+    background-size: cover;
+    box-shadow: 1px 1px 3px #000;
+    margin: 5px;
+}
+
+.nav-tabs > li.active > a {
+    text-shadow: 2px 2px 2px #000;
+}
+
+.tabs ul a {
+    color: aliceblue;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* Images */
+
+.tab-content img {    
+    padding: 10px;
+}
+
+.tab-pane p {
+    font-family: 'Bubblegum Sans', cursive;
+    color: aliceblue;
+    text-shadow: 2px 2px 3px #444;
+    font-size: 35px;
+    padding: 20px;
+}
+
+
+/* Footer */
+
 footer {
-    margin: 0 auto;
-    background-color: darkslategray;
-    width: 100%;
-    height: 50px;
-    margin: 30px 0;
-    
+    margin: 20px auto;
+    display: block;
+    background-color: aliceblue;
+    width: 80%;
+    height: 50px; 
+    box-shadow: 2px 2px 3px #444;
 }
 
 footer p {
     text-align: center;
     line-height: 50px;
-    color: aliceblue;
+    color: black;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 576px) {
+    header .container p {
+        font-size: 25px;
+    }
+    
+    header article p {
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+    .tabs .tab-content img {
+        width: 100%;
+    }
 }
 
 

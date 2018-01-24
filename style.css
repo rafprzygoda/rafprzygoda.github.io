@@ -61,14 +61,14 @@ header p {
 }
 
 .navbar-nav {
-    margin: 0px auto;
+    margin: 0 auto;
     width: 100%;
     text-align: center; 
     color: aliceblue;
 }
 
 .navbar-nav > li {
-    margin: 0px auto;
+    margin: 0 auto;
     width: 200px;
     /*position: relative;
     left: 5%;*/
@@ -240,16 +240,15 @@ header p {
         font-size: 25px;
     }
     
-    /*.navbar-nav li {
+    /*navbar-nav li {
         margin: 0 auto;
         float: left;
         display: block;
         width: 100%;
         height: 100%;
         text-align: center;
-    } */
+    }*/
     
-
     .navbar-nav p {
         text-align: center;
         font-size: 10px;  
@@ -257,7 +256,8 @@ header p {
 
     .navbar-nav {
         margin: 0 auto;
-        width: 100%; 
+        display: block;
+        width: 100%;
         color: aliceblue;
     }
 
@@ -340,6 +340,7 @@ header p {
 
     .navbar-nav {
         margin: 0 auto;
+        display: block;
         width: 100%; 
         color: aliceblue;
     }
