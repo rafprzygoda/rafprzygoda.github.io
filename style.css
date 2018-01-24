@@ -60,6 +60,14 @@ header p {
     margin-right: 20px;
 }
 
+.navbar-default {
+    background: url("./images/black_linen_v2.png") center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 0px;
+    
+}
+
 .navbar-nav {
     margin: 0 auto;
     width: 100%;
