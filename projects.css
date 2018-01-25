@@ -114,6 +114,8 @@ article p {
 
 .tab-content img {    
     padding: 10px;
+    width: 250px;
+    height: 180px;
 }
 
 .tab-pane p {
