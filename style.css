@@ -17,11 +17,11 @@ body:not(header) {
 header {
     margin-bottom: 10px;
     text-shadow: 5px 5px 5px #000;
-    background: url("./images/wooden3.jpg") center fixed;
+    background: url("./images/wooden3.jpg") center;
     background-repeat: no-repeat;
     background-size: cover; 
     object-fit: cover;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
 }
 
 header .container {
@@ -76,9 +76,10 @@ header p {
 }
 
 .navbar-default {
-    background: url("./images/black_linen_v2.png") center fixed;
+    background: url("./images/black_linen_v2.png") center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     border-bottom: 0px;
 }
 
