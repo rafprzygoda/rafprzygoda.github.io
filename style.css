@@ -120,12 +120,23 @@ header p {
     background-color: black;
 }
 
+.navbar-header p {
+    color: aliceblue;
+    font-family: 'Roboto Condensed', sans-serif;
+    position: absolute;
+    right: 70px;
+    top: 20px;
+    visibility: hidden;
+}
+
 
 /*CAROUSEL*/
 
 .item img {
-    width: 100%;
+    width: 500px;
     height: 100%;
+    margin: 0 auto;
+    object-fit: contain;
 }
 
 .carousel {
@@ -182,18 +193,21 @@ header p {
     margin: 10px 50px;
 }
 
+.images {
+    width: 300px;
+    height: 230px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
 .images img {
     box-shadow: 1px 1px 5px #444;
     margin: 0 auto;
     display: block;
-    border: 1px solid #000;
-    width: 350px;
-    height: 280px;
+    width: 100%;
+    height: 100%;
 }
 
-.images img:hover {
-    cursor: pointer;
-}
 /*CONTACT*/
 
 .contact {
@@ -242,6 +256,10 @@ header p {
 
 
 /*FOOTER*/
+
+footer {
+    display: none;
+}
 
 
 
@@ -300,6 +318,10 @@ header p {
     .navbar-nav > li:hover {
         background-color: #999;
         color: aliceblue;
+    }
+    
+    .navbar-header p {
+        visibility: visible;
     }
 
     /* carousel */
@@ -362,6 +384,10 @@ header p {
         font-size: 85px;
     }
     
+    .container #motto {
+        font-size: 45px;
+    }
+    
     .navbar-nav p {
         text-align: center;
         font-size: 10px;  
@@ -384,6 +410,10 @@ header p {
     .navbar-nav > li:hover {
         background-color: #999;
         color: aliceblue;
+    }
+    
+    .navbar-header p {
+        visibility: visible;
     }
     
     /* carousel */
@@ -440,18 +470,21 @@ header p {
     
     .navbar-nav p {
         text-align: center;
-        font-size: 10px;  
+        font-size: 5px; 
+        visibility: hidden;
     }
 
     .navbar-nav {
-        margin: 0 auto;
-        padding: 20px 0;
+        margin: 10px auto;
         width: 100%; 
         color: aliceblue;
+        display: flex;
+        flex-direction: row;
+        height: auto;
     }
 
     .navbar-nav > li {
-        margin: 0 auto;
+        margin: 10px auto;
         width: 100%;
         font-size: 20px;
         color: aliceblue;
@@ -508,6 +541,12 @@ header p {
         width: 100%;
         margin: 10px auto;
         padding: 10px;
+        text-align: center;
+    }
+    
+    footer {
+        display: inline;
+        color: aliceblue;
         text-align: center;
     }
 }
