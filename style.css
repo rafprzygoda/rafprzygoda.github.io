@@ -129,6 +129,9 @@ header p {
     visibility: hidden;
 }
 
+.navbar-default .navbar-nav li a {
+    color: aliceblue;
+}
 
 /*CAROUSEL*/
 
@@ -213,8 +216,8 @@ header p {
     height: 230px;
     position: absolute;
     display: none;
-    background-color: black;
-    opacity: 0.4;
+    background-color: navy;
+    opacity: 0.3;
 }
 
 .layer a {
@@ -222,19 +225,17 @@ header p {
 }
 
 .layer i {
-    font-size: 30px;
+    font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 230px;
-    color: aliceblue;
+    color: aliceblue;   
 }
 
 .images:hover .layer {
     display: inline-block;
 }
-
-
 
 /*CONTACT*/
 
@@ -394,6 +395,15 @@ footer {
     
     .media-body p {
         font-size: 0.7em;
+    }
+    
+    /* Layer */
+    
+    .layer {
+        position: absolute;
+        display: inline-block;
+        background-color: firebrick;
+        opacity: 0.3;
     }
     
     /* contact */
