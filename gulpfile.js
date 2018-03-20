@@ -1,6 +1,6 @@
 // Minify images
 
-/*var gulp = require('gulp');
+var gulp = require('gulp');
 var imagemin = require('gulp-imagemin');
  
 gulp.task('compress-image', function() {
@@ -24,11 +24,4 @@ gulp.task('minify-css', () => {
 
 
 
-var gulp = require('gulp');
-var imagemin = require('gulp-imagemin');
- 
-gulp.task('compress-image', function() {
-    return gulp.src('./zdjecia_na_strone/kuchnie/*.jpg')
-        .pipe(imagemin({ progressive: true, optimizationLevel: 10 }))
-        .pipe(gulp.dest('./zdjecia_min'));
-});
+
