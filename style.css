@@ -403,6 +403,10 @@ footer {
         font-size: 0.7em;
     }
     
+    .media .media-object {
+        display: none;
+    }
+    
     /* Layer */
     
     .layer {
